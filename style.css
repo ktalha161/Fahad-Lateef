@@ -9,7 +9,7 @@ body {
   justify-content: center;      /* Horizontal center */
   align-items: center;          /* Vertical center */
   min-height: 100vh;            /* Full screen height */
-  text-align: left;           /* Text centered */
+  text-align: left;             /* Text aligned left */
 }
 
 @keyframes gradientShift {
@@ -104,6 +104,17 @@ body {
   color: #eee;
 }
 
+/* 🔹 Golden company names */
+.entities li .company {
+  color: #f9d342;
+  font-weight: 600;
+}
+
+.entities li .desc {
+  color: #eee;
+  font-weight: normal;
+}
+
 .quote {
   margin: 25px auto;
   font-size: 1.2rem;
@@ -112,8 +123,9 @@ body {
   border-left: 3px solid #f9d342;
   padding-left: 15px;
   display: inline-block;
-  text-align: left; /* Keeps inner text readable */
+  text-align: left;
 }
+
 .section-card {
   background: rgba(255, 255, 255, 0.1);
   border-left: 4px solid #f9d342;
@@ -141,6 +153,7 @@ body {
   margin: 8px 0;
   color: #eee;
 }
+
 .section-card li a {
   color: #f9d342;       /* Golden links */
   font-weight: 600;     /* Make them stand out */
@@ -151,4 +164,3 @@ body {
   text-decoration: underline;
   color: #fff176;       /* Softer golden on hover */
 }
-
