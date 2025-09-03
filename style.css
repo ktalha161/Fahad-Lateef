@@ -5,12 +5,11 @@ body {
   background-size: 400% 400%;
   animation: gradientShift 12s ease infinite;
   color: #fff;
-  display: flex;                /* Centers everything */
-  justify-content: center;      /* Horizontal center */
-  align-items: center;          /* Vertical center */
-  min-height: 100vh;            /* Full screen height */
-  min-width: 100vh;
-  text-align: center;             /* Text aligned center */
+  display: flex;                
+  justify-content: center;      
+  align-items: center;          
+  min-height: 100vh;            
+  text-align: center;           /* Everything defaults center */
 }
 
 @keyframes gradientShift {
@@ -28,7 +27,7 @@ body {
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.15);
   box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.6);
-  text-align: center;
+  text-align: center;   /* Profile stuff centered */
   animation: fadeIn 1.2s ease;
 }
 
@@ -83,6 +82,7 @@ body {
   font-style: italic;
 }
 
+/* Entities + Qualifications special handling */
 .entities h3, 
 .qualifications h3 {
   margin-top: 25px;
@@ -95,8 +95,8 @@ body {
   list-style: none;
   padding: 0;
   margin: 0 auto;
-  display: inline-block; /* Centered block */
-  text-align: left;      /* Left-align items */
+  display: inline-block; 
+  text-align: left;      /* Keep these left aligned */
 }
 
 .entities li, 
@@ -105,7 +105,7 @@ body {
   color: #eee;
 }
 
-/* 🔹 Golden company names */
+/* Golden company names */
 .entities li .company {
   color: #f9d342;
   font-weight: 600;
@@ -116,6 +116,18 @@ body {
   font-weight: normal;
 }
 
+/* Golden titles in qualifications */
+.qualifications li .title {
+  color: #f9d342;
+  font-weight: 600;
+}
+
+.qualifications li .detail {
+  color: #eee;
+  font-weight: normal;
+}
+
+/* Quote section */
 .quote {
   margin: 25px auto;
   font-size: 1.2rem;
@@ -124,7 +136,7 @@ body {
   border-left: 3px solid #f9d342;
   padding-left: 15px;
   display: inline-block;
-  text-align: center;
+  text-align: center;   /* Center this */
 }
 
 .section-card {
@@ -134,7 +146,7 @@ body {
   border-radius: 12px;
   margin: 25px auto;
   max-width: 700px;
-  text-align: left;
+  text-align: left;     /* Left align text inside section cards */
   box-shadow: 0px 8px 20px rgba(0,0,0,0.4);
 }
 
@@ -156,12 +168,12 @@ body {
 }
 
 .section-card li a {
-  color: #f9d342;       /* Golden links */
-  font-weight: 600;     /* Make them stand out */
+  color: #f9d342;       
+  font-weight: 600;     
   text-decoration: none;
 }
 
 .section-card li a:hover {
   text-decoration: underline;
-  color: #fff176;       /* Softer golden on hover */
+  color: #fff176;       
 }
