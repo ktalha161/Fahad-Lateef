@@ -137,7 +137,7 @@ footer {
 }
 
 .footer-content a:hover {
-  color: #ccc;
+  color: #fff176;
   text-decoration: underline;
 }
 
@@ -145,8 +145,8 @@ footer {
   display: inline-block;
   padding: 10px 20px;
   margin: 5px 0;
-  background-color: #f9d342;
-  color: #000;
+  background-color: #000;
+  color: #f9d342;
   border: none;
   border-radius: 5px;
   text-decoration: none;
