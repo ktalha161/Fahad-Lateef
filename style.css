@@ -28,7 +28,7 @@ body {
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.15);
   box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.6);
-  text-align: left;
+  text-align: center;
   animation: fadeIn 1.2s ease;
 }
 
@@ -124,7 +124,7 @@ body {
   border-left: 3px solid #f9d342;
   padding-left: 15px;
   display: inline-block;
-  text-align: left;
+  text-align: center;
 }
 
 .section-card {
