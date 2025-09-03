@@ -5,7 +5,11 @@ body {
   background-size: 400% 400%;
   animation: gradientShift 12s ease infinite;
   color: #fff;
-  text-align: center; /* Center all text */
+  display: flex;                /* Center container */
+  justify-content: center;      /* Horizontal center */
+  align-items: center;          /* Vertical center */
+  min-height: 100vh;            /* Full height screen */
+  text-align: center;           /* Center text */
 }
 
 @keyframes gradientShift {
@@ -16,14 +20,14 @@ body {
 
 .profile-card {
   max-width: 900px;
-  margin: 50px auto;
+  width: 90%;
   background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(12px);
   padding: 40px;
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.15);
   box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.6);
-  text-align: center; /* Ensure content inside is centered */
+  text-align: center; /* Content centered */
   animation: fadeIn 1.2s ease;
 }
 
@@ -89,6 +93,9 @@ body {
 .qualifications ul {
   list-style: none;
   padding: 0;
+  margin: 0 auto;       /* Center align lists */
+  display: inline-block; /* Keeps list centered */
+  text-align: left;      /* Keeps items aligned neatly */
 }
 
 .entities li, 
@@ -105,4 +112,5 @@ body {
   border-left: 3px solid #f9d342;
   padding-left: 15px;
   display: inline-block; /* Keeps it centered nicely */
+  text-align: left;      /* Better formatting inside */
 }
