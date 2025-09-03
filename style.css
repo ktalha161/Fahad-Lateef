@@ -1,3 +1,4 @@
+/* ------------------- Body & Profile ------------------- */
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -5,11 +6,12 @@ body {
   background-size: 400% 400%;
   animation: gradientShift 12s ease infinite;
   color: #fff;
-  display: flex;                
-  justify-content: center;      
-  align-items: center;          
-  min-height: 100vh;            
-  text-align: center;           /* Everything defaults center */
+  display: flex;
+  flex-direction: column;        /* So footer sticks below content */
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
 }
 
 @keyframes gradientShift {
@@ -27,36 +29,24 @@ body {
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.15);
   box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.6);
-  text-align: center;   /* Profile stuff centered */
+  text-align: center;
   animation: fadeIn 1.2s ease;
 }
 
+/* Profile Animations */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
 .profile-card h1 a,
-.profile-card h3 a {
-  color: #f9d342;
-  text-decoration: none;
-}
+.profile-card h3 a { color: #f9d342; text-decoration: none; }
 
-.profile-card h1 {
-  font-size: 2.5rem;
-  margin: 15px 0 10px;
-}
-
-.profile-card h3 {
-  font-weight: 500;
-  margin: 5px 0;
-  color: #ccc;
-}
+.profile-card h1 { font-size: 2.5rem; margin: 15px 0 10px; }
+.profile-card h3 { font-weight: 500; margin: 5px 0; color: #ccc; }
 
 .profile-card h1 a:hover,
-.profile-card h3 a:hover {
-  text-decoration: underline;
-}
+.profile-card h3 a:hover { text-decoration: underline; }
 
 .profile-card img {
   border-radius: 50%;
@@ -75,59 +65,15 @@ body {
   box-shadow: 0 0 25px rgba(249, 211, 66, 0.9);
 }
 
-.tags {
-  margin-top: 15px;
-  font-size: 1rem;
-  color: #f9d342;
-  font-style: italic;
-}
+/* Tags, Entities, Qualifications, Quotes */
+.tags { margin-top: 15px; font-size: 1rem; color: #f9d342; font-style: italic; }
 
-/* Entities + Qualifications special handling */
-.entities h3, 
-.qualifications h3 {
-  margin-top: 25px;
-  font-size: 1.3rem;
-  color: #f9d342;
-}
+.entities h3, .qualifications h3 { margin-top: 25px; font-size: 1.3rem; color: #f9d342; }
+.entities ul, .qualifications ul { list-style: none; padding: 0; margin: 0 auto; display: inline-block; text-align: left; }
+.entities li, .qualifications li { margin: 8px 0; color: #eee; }
+.entities li .company, .qualifications li .title { color: #f9d342; font-weight: 600; }
+.entities li .desc, .qualifications li .detail { color: #eee; font-weight: normal; }
 
-.entities ul, 
-.qualifications ul {
-  list-style: none;
-  padding: 0;
-  margin: 0 auto;
-  display: inline-block; 
-  text-align: left;      /* Keep these left aligned */
-}
-
-.entities li, 
-.qualifications li {
-  margin: 8px 0;
-  color: #eee;
-}
-
-/* Golden company names */
-.entities li .company {
-  color: #f9d342;
-  font-weight: 600;
-}
-
-.entities li .desc {
-  color: #eee;
-  font-weight: normal;
-}
-
-/* Golden titles in qualifications */
-.qualifications li .title {
-  color: #f9d342;
-  font-weight: 600;
-}
-
-.qualifications li .detail {
-  color: #eee;
-  font-weight: normal;
-}
-
-/* Quote section */
 .quote {
   margin: 25px auto;
   font-size: 1.2rem;
@@ -136,7 +82,7 @@ body {
   border-left: 3px solid #f9d342;
   padding-left: 15px;
   display: inline-block;
-  text-align: center;   /* Center this */
+  text-align: center;
 }
 
 .section-card {
@@ -146,34 +92,89 @@ body {
   border-radius: 12px;
   margin: 25px auto;
   max-width: 700px;
-  text-align: left;     /* Left align text inside section cards */
+  text-align: left;
   box-shadow: 0px 8px 20px rgba(0,0,0,0.4);
 }
 
-.section-card h3 {
-  margin-top: 0;
-  margin-bottom: 12px;
+.section-card h3 { margin-top: 0; margin-bottom: 12px; color: #f9d342; }
+.section-card ul { list-style: none; padding: 0; margin: 0; }
+.section-card li { margin: 8px 0; color: #eee; }
+.section-card li a { color: #f9d342; font-weight: 600; text-decoration: none; }
+.section-card li a:hover { text-decoration: underline; color: #fff176; }
+
+/* ------------------- Footer ------------------- */
+footer {
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(8px);
+  color: #fff;
+  width: 100%;
+  padding: 40px 20px 20px;
+  margin-top: auto;       /* Push footer to bottom */
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto 20px;
+}
+
+.footer-content div {
+  flex: 1 1 200px;
+}
+
+.footer-content a {
   color: #f9d342;
-}
-
-.section-card ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.section-card li {
-  margin: 8px 0;
-  color: #eee;
-}
-
-.section-card li a {
-  color: #f9d342;       
-  font-weight: 600;     
   text-decoration: none;
+  display: block;
+  margin: 5px 0;
 }
 
-.section-card li a:hover {
+.footer-content a:hover {
+  color: #fff176;
   text-decoration: underline;
-  color: #fff176;       
+}
+
+.footer-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px 0;
+  background-color: #f9d342;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.footer-btn:hover {
+  background-color: #fff176;
+}
+
+.subscription {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.subscription input {
+  flex: 1;
+  min-width: 180px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(249, 211, 66, 0.3);
+  padding-top: 15px;
+  font-size: 0.85rem;
+  color: #ccc;
 }
