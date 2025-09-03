@@ -1,141 +1,48 @@
-/* Use Poppins like Legend Group */
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(-45deg, #0A1F44, #122C60, #1E3A8A, #0F172A);
+  background: linear-gradient(120deg, #0a0f29, #1a1f3b, #0a0f29);
   background-size: 400% 400%;
-  animation: gradientBG 15s ease infinite;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+  animation: gradientShift 12s ease infinite;
+  color: #fff;
 }
 
-@keyframes gradientBG {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
-/* Profile Card */
 .profile-card {
-  max-width: 1000px;
-  margin: auto;
-  background: #fff;
-  border-radius: 16px;
-  padding: 60px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-  border-top: 6px solid #1d4ed8;
+  max-width: 900px;
+  margin: 50px auto;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
 }
 
-/* Profile Header */
-.profile-header {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.profile-header img {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  border: 5px solid #2563eb;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.profile-img-link:hover img {
-  transform: scale(1.05);
-}
-
-.profile-header h1 {
-  font-size: 2.5rem;
-  margin: 20px 0 10px;
-  color: #111827;
-}
-
-.profile-header h1 .name-link {
-  color: inherit;
+.profile-card h1 a,
+.profile-card h3 a {
+  color: #f9d342;
   text-decoration: none;
 }
 
-.profile-header h3 {
-  font-size: 1.2rem;
-  color: #374151;
-  margin: 8px 0;
-}
-
-.tags {
-  margin-top: 12px;
-  font-size: 1rem;
-  color: #2563eb;
-  font-weight: 500;
-}
-
-/* Links */
-a {
-  color: #2563eb;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-a:hover {
+.profile-card h1 a:hover,
+.profile-card h3 a:hover {
   text-decoration: underline;
 }
 
-.highlight-link {
-  color: #1d4ed8;
-  font-weight: 700;
+.profile-card img {
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border: 4px solid #f9d342;
+  transition: transform 0.3s ease;
 }
 
-/* Body text */
-.profile-body p {
-  line-height: 1.9;
-  margin-bottom: 22px;
-  font-size: 1.05rem;
-  color: #374151;
-  text-align: justify;
-}
-
-/* Entities & Qualifications */
-.entities, .qualifications {
-  margin: 30px 0;
-  padding: 30px;
-  background: #f1f5f9;
-  border-left: 6px solid #2563eb;
-  border-radius: 12px;
-}
-
-.entities h3, .qualifications h3 {
-  margin-top: 0;
-  color: #1d4ed8;
-  font-size: 1.3rem;
-  margin-bottom: 15px;
-}
-
-.entities ul, .qualifications ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.entities li, .qualifications li {
-  margin: 12px 0;
-  line-height: 1.6;
-  font-size: 1rem;
-}
-
-/* Quote */
-.quote {
-  margin: 40px 0;
-  font-style: italic;
-  text-align: center;
-  font-size: 1.25rem;
-  color: #2563eb;
-  font-weight: 500;
+.profile-card img:hover {
+  transform: scale(1.1);
 }
