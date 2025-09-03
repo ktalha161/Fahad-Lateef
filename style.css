@@ -9,7 +9,7 @@ body {
   justify-content: center;      /* Horizontal center */
   align-items: center;          /* Vertical center */
   min-height: 100vh;            /* Full screen height */
-  text-align: center;           /* Text centered */
+  text-align: left;           /* Text centered */
 }
 
 @keyframes gradientShift {
@@ -27,7 +27,7 @@ body {
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.15);
   box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.6);
-  text-align: center;
+  text-align: left;
   animation: fadeIn 1.2s ease;
 }
 
@@ -140,5 +140,15 @@ body {
 .section-card li {
   margin: 8px 0;
   color: #eee;
+}
+.section-card li a {
+  color: #f9d342;       /* Golden links */
+  font-weight: 600;     /* Make them stand out */
+  text-decoration: none;
+}
+
+.section-card li a:hover {
+  text-decoration: underline;
+  color: #fff176;       /* Softer golden on hover */
 }
 
