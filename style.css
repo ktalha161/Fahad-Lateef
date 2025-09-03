@@ -9,7 +9,8 @@ body {
   justify-content: center;      /* Horizontal center */
   align-items: center;          /* Vertical center */
   min-height: 100vh;            /* Full screen height */
-  text-align: left;             /* Text aligned left */
+  min-width: 100vh;
+  text-align: center;             /* Text aligned center */
 }
 
 @keyframes gradientShift {
