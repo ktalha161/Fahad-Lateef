@@ -116,11 +116,13 @@ footer {
 
 .footer-content {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 20px;
+  flex-wrap: wrap;           /* Allows wrapping on small screens */
+  justify-content: space-between; /* Spread items across horizontally */
+  align-items: flex-start;   /* Align all divs to top */
   max-width: 1200px;
   margin: 0 auto 20px;
+  width: 100%;
+  gap: 20px;                 /* Space between columns */
 }
 
 .footer-content div {
