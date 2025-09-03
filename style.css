@@ -155,7 +155,7 @@ footer {
 }
 
 .footer-btn:hover {
-  background-color: #fff176;
+  background-color: #ccc;
 }
 
 .footer-bottom {
@@ -163,4 +163,10 @@ footer {
   padding-top: 15px;
   font-size: 0.85rem;
   color: #ccc;
+  display: flex;
+  justify-content: space-between; /* Left & right text separated */
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap; /* Optional for small screens */
 }
