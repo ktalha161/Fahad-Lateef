@@ -5,11 +5,11 @@ body {
   background-size: 400% 400%;
   animation: gradientShift 12s ease infinite;
   color: #fff;
-  display: flex;                /* Center container */
+  display: flex;                /* Centers everything */
   justify-content: center;      /* Horizontal center */
   align-items: center;          /* Vertical center */
-  min-height: 100vh;            /* Full height screen */
-  text-align: center;           /* Center text */
+  min-height: 100vh;            /* Full screen height */
+  text-align: center;           /* Text centered */
 }
 
 @keyframes gradientShift {
@@ -27,7 +27,7 @@ body {
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.15);
   box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.6);
-  text-align: center; /* Content centered */
+  text-align: center;
   animation: fadeIn 1.2s ease;
 }
 
@@ -66,7 +66,7 @@ body {
   border: 4px solid #f9d342;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 0 15px rgba(249, 211, 66, 0.6);
-  margin: 0 auto; /* Centers image */
+  margin: 0 auto;
   display: block;
 }
 
@@ -93,9 +93,9 @@ body {
 .qualifications ul {
   list-style: none;
   padding: 0;
-  margin: 0 auto;       /* Center align lists */
-  display: inline-block; /* Keeps list centered */
-  text-align: left;      /* Keeps items aligned neatly */
+  margin: 0 auto;
+  display: inline-block; /* Centered block */
+  text-align: left;      /* Left-align items */
 }
 
 .entities li, 
@@ -111,6 +111,6 @@ body {
   color: #f9d342;
   border-left: 3px solid #f9d342;
   padding-left: 15px;
-  display: inline-block; /* Keeps it centered nicely */
-  text-align: left;      /* Better formatting inside */
+  display: inline-block;
+  text-align: left; /* Keeps inner text readable */
 }
