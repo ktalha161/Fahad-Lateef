@@ -130,7 +130,7 @@ footer {
 }
 
 .footer-content a {
-  color: #ccc;
+  color: #f9d342;
   text-decoration: none;
   display: block;
   margin: 5px 0;
@@ -155,7 +155,7 @@ footer {
 }
 
 .footer-btn:hover {
-  background-color: #f9d342;
+  background-color: #ccc;
 }
 
 .footer-bottom {
